@@ -1,0 +1,24 @@
+.ball
+  width: 240px
+  height: 240px
+
+.animated-ball
+  animation-name: ballmove
+  animation-duration: 2s
+  animation-iteration-count: infinite
+  animation-timing-function: ease-in-out
+  animation-delay: 2s
+  animation-fill-mode: forwards
+  animation-direction: alternate
+  animation-play-state: paused
+
+  &:hover
+    animation-play-state: running
+
+@keyframes ballmove
+  0%
+    transform: translateX(0) rotate(0)
+  0%
+    transform: translateX(-10px) rotate(-0.5turn)
+  100%
+    transform: translateX(450px) rotate(2turn)
